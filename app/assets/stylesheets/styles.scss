@@ -1,24 +1,37 @@
 $myColor: #75c6bc;
-$myExtraString: " And this text was added from within my stylesheet..COOL!";
+$myFont: sans-serif;
+$myExtraString: " And this text was added from within my stylesheet";
 
-@mixin myMixin {
-	background-color:yellow;
-	border:3px dashed blue;
+@mixin sectionMixin {
+	background-color:#8280de;
+	border:3px dashed #5ee398;
 	font-family:sans-serif;
+	width:50%;
+	display: inline-block;
+	margin:0;
 }
 
-
+*{
+	margin:0;
+}
 
 html{
 	color:$myColor;
+	font-family: $myFont;
 	font-size:16px;
 	background-color:#c77580;
-		section{
-			@include myMixin;
-				:after{
-				content: $myExtraString;
-				font-size:1.5em;
-				color:#f00;
+	position:relative;
+		div{
+			// border:1px solid red;
+			width:100%;
+			margin:0;
+				section{
+					@include sectionMixin;
+						:after{
+							content: $myExtraString;
+							font-size:1.1em;
+							color:#fff;
+						}
 				}
 		}
 }
