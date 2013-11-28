@@ -20,13 +20,13 @@ html{
 	color:$myColor;
 	font-family: $myFont;
 	font-size:16px;
-	background-color:#c77580;
+	background-color:#cc6699;
 	position:relative;
 	img#sass{
 		background-color:#fff;
 		width:800px;
-		max-width: 90%;
-		margin:2%;
+		max-width: 100%;
+		margin:0;
 	}
 		div{
 			// border:1px solid red;
@@ -34,11 +34,11 @@ html{
 			margin:0;
 				section{
 					@include sectionMixin;
-						:after{
-							content: $myExtraString;
-							font-size:1.1em;
-							color:#fff;
-						}
+						// :after{
+						// 	content: $myExtraString;
+						// 	font-size:1.1em;
+						// 	color:#fff;
+						// }
 				}
 		}
 		div.clear{
@@ -46,14 +46,14 @@ html{
 		}
 		footer p{
 			position: relative; 
-	width: 100%; 
-	height: 100%; 
-	margin:0px auto;
-	padding:25px 0;
-	background:#222;
-	font-family: "Futura", Arial, sans-serif; 
-	font-weight: bold;
-	font-size: 60px; 
-	text-align: center;
+		width: 100%; 
+		height: 100%; 
+		margin:0px auto;
+		padding:25px 0;
+		background:#222;
+		font-family: "Futura", Arial, sans-serif; 
+		font-weight: bold;
+		font-size: 2em; 
+		text-align: center;
 		}
 }
