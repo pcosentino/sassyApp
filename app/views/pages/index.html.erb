@@ -2,7 +2,7 @@
 		<div>
 			<section>
 				<h2>Using Sass Variables</h2>
-					<ul>
+					<!-- <ul>
 						<li>Declared using a $ character</li>
 						<li>Numbers - $myVar: 100px;</li>
 						<li>Strings - $myStr: "some cool text";</li>
@@ -10,7 +10,30 @@
 						<li>Booleans - $myBool: false;</li>
 						<li>Nulls - $myVar: null;</li>
 						<li>Lists - $myList: 1px solid red;</li>
-					</ul>
+					</ul> -->
+
+					<code>
+						<ul>$myColor:navy;<br>
+								$myPadding:.5em;<br>
+								$myStringVar: " my appended string";<br>
+								$tester:1px solid red;<br><br>
+						
+								h1 {
+									<li>color:$myColor;</li>
+								}
+								</ul>
+								<ul>
+								#myPara:after {
+									<li>$myStringVar;</li>
+								}
+								</ul>
+								<ul>
+								p {
+									<li>$tester;</li>
+									<li>$myPadding;</li>
+								}
+						</ul>
+					</code>
 			</section>
 			<section>
 				<h2>Defining Nested Rules</h2>
@@ -93,7 +116,27 @@
 						</code>
 			</section>
 			<section>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				<h2>Using Operators</h2>
+					<code>
+							<ul>$myColor:red;<br>
+									$basePadding:.5em;<br>
+									$baseThickness:2px;<br><br>
+
+									#myPara {
+								<li>color:$myColor + blue;</li>
+								<li>border:$baseThickness solid $myColor;</li>
+								<li>padding:$basePadding $basePadding + .5;</li>
+								}
+							</ul>
+							<br>
+							<ul>$gender:boy;<br>
+									$myColor: if($gender == "boy", #00f, #f00);<br><br>
+
+									myPara {
+								<li>color:$myColor;</li>
+								}
+							</ul>
+						</code>
 			</section>
 		</div>
 		<div class="clear"></div>

@@ -35,6 +35,7 @@ html{
 				section{
 					@include sectionMixin;
 						h3{
+							color: #fff;
 							margin-top:5%;
 							border-bottom:1px dashed #fff;
 						}	
