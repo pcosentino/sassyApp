@@ -59,7 +59,38 @@
 
 		<div>
 			<section>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				<h2>Working With Mixins</h2>
+					<p>Mixins allow you to define common properties once, then reuse them.</p>
+						<code>
+							<ul>@mixin .myMixin {
+								<li>font-size:.9em</li>
+								<li>background-color:#8280de;</li>
+								<li>border-bottom:1px dashed #fff;</li>
+								}
+							</ul>
+							<ul>.myStyle {
+								<li>@include myMixin;</li>
+								<li>color:#75c6bc;</li>
+								}
+							</ul>
+							<br>
+							<ul>@mixin commonTraits {
+								<li>border-radius:10px</li>
+								<li>border:1px solid #f0f;</li>
+								<li>padding:10%;</li>
+								}
+							</ul>
+							<ul>header {
+								<li>@include commonTraits;</li>
+								<li>color:#75c6bc;</li>
+								}
+							</ul>
+							<ul>footer {
+								<li>@include commonTraits;</li>
+								<li>color:#274D87;</li>
+								}
+							</ul>
+						</code>
 			</section>
 			<section>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
