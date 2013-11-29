@@ -34,11 +34,20 @@ html{
 			margin:0;
 				section{
 					@include sectionMixin;
-						// :after{
-						// 	content: $myExtraString;
-						// 	font-size:1.1em;
-						// 	color:#fff;
-						// }
+						h3{
+							margin-top:5%;
+							border-bottom:1px dashed #fff;
+						}	
+						code{
+							ul{	
+								color:#fff;		
+									li{
+										color:#75c6bc;
+										list-style: none;
+										text-indent: 30px;
+									}
+							}
+						}
 				}
 		}
 		div.clear{

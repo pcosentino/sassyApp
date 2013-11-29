@@ -13,7 +13,47 @@
 					</ul>
 			</section>
 			<section>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				<h2>Defining Nested Rules</h2>
+					<h3>CSS</h3>
+						<code>
+							<ul>
+								.content {
+									<li>width:100%;</li>
+									<li>margin:10% 5%;</li>
+									<li>color:#f00</li>
+								}
+							</ul>
+							<ul>
+								.content a {
+									<li>color:#00f;</li>
+									<li>text-decoration:none;</li>
+								}
+							</ul>
+							<ul>
+								.content a:hover {
+									<li>color:#0f0</li>
+								}
+							</ul>
+						</code>
+					<h3>Sass</h3>
+						<code>
+							<ul>	
+								.content {
+									<li>width:100%;</li>
+									<li>margin:10% 5%;</li>
+									<li>color:#f00</li>
+										<ul>a {
+											<li>color:00f;</li>
+											<li>text-decoration:none;</li>
+												<ul>:hover {
+														<li>color:#0f0;</li>
+													}
+												</ul>
+											}
+										</ul>
+								}
+							</ul>
+						</code>
 			</section>
 		</div>
 
