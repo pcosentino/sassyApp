@@ -9,7 +9,6 @@ $myExtraString: " And this text was added from within my stylesheet";
 	padding:4%;
 	margin:0;
 	float:left;
-	margin-top:2%;
 }
 
 
@@ -26,7 +25,7 @@ html{
 		background-color:#fff;
 		width:800px;
 		max-width: 100%;
-		margin:0;
+		margin: 0 0 -4px 0;
 	}
 		div{
 			// border:1px solid red;
@@ -34,9 +33,12 @@ html{
 			margin:0;
 				section{
 					@include sectionMixin;
+						h2{
+							border-bottom:2px dashed #75c6bc;
+							margin-bottom:5%;
+						}
 						h3{
 							color: #fff;
-							margin-top:5%;
 							border-bottom:1px dashed #fff;
 						}	
 						code{
