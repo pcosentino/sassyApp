@@ -69,3 +69,15 @@ html{
 		text-align: center;
 		}
 }
+
+@media (max-width: 1095px) {
+  html{
+	  div{
+	  	section{
+	  	float: none;
+	  	width:80%;
+	  	margin:0 auto;
+	  	}	
+	  }
+  }
+}
