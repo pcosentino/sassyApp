@@ -37,10 +37,9 @@ html{
 	}
 		div{
 			// border:1px solid red;
-			width: 1000px;
+			width: 1200px;
 			margin: 0 auto;
-			display: block;
-			height: 700px;
+			height: 100%;
 				section{
 					@include sectionMixin;
 						h2{
