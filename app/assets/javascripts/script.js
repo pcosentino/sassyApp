@@ -1,3 +1,3 @@
-$("body").click(function(){
+$("html").click(function(){
 	alert("it worked");
 });
