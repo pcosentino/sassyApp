@@ -7,11 +7,10 @@ $test: 1px solid white;
 @mixin sectionMixin {
 	background-color:#8280de;
 	font-family:sans-serif;
-	width:40%;
-	padding:4%;
-	margin:10px;
-	float:left;
-	height:75%;
+	width: 49%;
+	margin: .5%;
+	float: left;
+	height: 75%;
 }
 
 
@@ -37,30 +36,33 @@ html{
 	}
 		div{
 			// border:1px solid red;
-			width: 1200px;
+			width: 100%;
 			margin: 0 auto;
 			height: 100%;
-				section{
-					@include sectionMixin;
-						h2{
-							border-bottom:2px dashed #75c6bc;
-							margin-bottom:5%;
-						}
-						h3{
-							color: #fff;
-							border-bottom:1px dashed #fff;
-						}	
-						code{
-							ul{	
-								color:#fff;		
-									li{
-										color:#75c6bc;
-										list-style: none;
-										text-indent: 30px;
+						section{
+							@include sectionMixin;
+								h2{
+									border-bottom:2px dashed #75c6bc;
+									margin-bottom:5%;
+								}
+								h3{
+									color: #fff;
+									border-bottom:1px dashed #fff;
+								}	
+								code{
+									ul{	
+										color:#fff;		
+											li{
+												color:#75c6bc;
+												list-style: none;
+												text-indent: 30px;
+											}
 									}
-							}
+								}
 						}
-				}
+		}
+		#spacer{
+			width: 1%;
 		}
 		div.clear{
 			clear:both;
@@ -80,7 +82,7 @@ html{
 		}
 }
 
-@media (max-width: 1095px) {
+@media (max-width: 930px) {
   html{
 	  div{
 	  	section{
