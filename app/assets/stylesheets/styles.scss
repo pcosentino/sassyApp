@@ -82,7 +82,7 @@ html{
 		}
 }
 
-@media (max-width: 960px) {
+@media (max-width: 960px){
   html{
 	  div{
 	  	section{
@@ -92,4 +92,13 @@ html{
 	  	}	
 	  }
   }
+}
+
+@media (max-width:495px) {
+	html{
+		div{
+				width:500px;
+		}
+	}
+
 }
